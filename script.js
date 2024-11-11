@@ -8,6 +8,13 @@ nobutton.addEventListener('click', function(){
 });
 
 yesbutton.addEventListener('click', function(){
-    alert('awww, I knew you are the best')
+    let image = document.createElement('img');
+    image.src = 'thank-you.gif'
+    image.style.width = '300px'
+
+    let image_carrier = document.getElementById('image_carrier');
+    image_carrier.appendChild(image);
+    yesbutton.style.display = 'none';
+    nobutton.style.display = 'none';
 });
 
